@@ -26,6 +26,7 @@ export async function createPost(content: string, image: string) {
   }
 }
 
+//implementing scroll based fetching here
 export async function getPosts() {
   try {
     const posts = await prisma.post.findMany({
